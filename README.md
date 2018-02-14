@@ -1,2 +1,2 @@
 # terraform-ecs-default-vpc
-Terraform ecs setup for aws free tier - no NAT payments
+Terraform ecs setup for aws free tier - no NAT payments - not for production
