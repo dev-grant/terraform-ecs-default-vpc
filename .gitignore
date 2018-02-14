@@ -1,0 +1,7 @@
+credentials.csv
+terraform.tfvars
+mykey*
+.terraform
+code
+*.tfstate*
+playground.json

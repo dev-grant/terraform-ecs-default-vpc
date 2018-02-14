@@ -1,0 +1,18 @@
+{
+  "cluster": "main-cluster",
+  "serviceName": "react-nginx",
+  "taskDefinition": "@@TASKDEFINITION_ARN@@",
+  "loadBalancers": [
+    {
+      "targetGroupArn": "---GET FROM TERRAFORM OUTPUT---",
+      "containerName": "react-nginx",
+      "containerPort": 80
+    }
+  ],
+  "desiredCount": 1,
+  "role": "awsDockerClusterServiceRole",
+  "deploymentConfiguration": {
+    "maximumPercent": 200,
+    "minimumHealthyPercent": 100
+  }
+}

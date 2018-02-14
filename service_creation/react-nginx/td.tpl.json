@@ -1,0 +1,22 @@
+{
+  "containerDefinitions": [
+    {
+      "name": "react-nginx",
+      "image": "---docker image repo location---",
+      "memory": 300,
+      "cpu": 256,
+      "essential": true,
+      "portMappings": [
+        {
+          "containerPort": 80,
+          "protocol": "tcp"
+        }
+      ]
+    }
+  ],
+  "volumes": [],
+  "networkMode": "bridge",
+  "placementConstraints": [],
+  "family": "react-nginx-task",
+  "taskRoleArn": ""
+}
